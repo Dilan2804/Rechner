@@ -14,6 +14,10 @@ namespace ConsoleApp
             // Verwendung der Klasse
             Rechenautomat rechner = new Rechenautomat();
 
+            int korrekt = 0;
+            int falsch = 0;
+
+
             string eingabe = "-";
             while (eingabe != "")
             {
@@ -34,10 +38,12 @@ namespace ConsoleApp
                         if (rechner.Prüfe(zahl))
                         {
                             Console.WriteLine("Super!");
+                            korrekt++;
                         }
                         else
                         {
                             Console.WriteLine("Du kannst das besser!");
+                            falsch++;
                         }
                     }
                     catch (Exception ex)
@@ -49,6 +55,8 @@ namespace ConsoleApp
                 
 
             }
+
+            Console.WriteLine("Du hast {0} Aufgaben richtig gelöst und {1} Aufgaben falsch gelöst", korrekt, falsch);
         }
     }
 }
