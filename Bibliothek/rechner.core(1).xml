@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>rechner.core</name>
+    </assembly>
+    <members>
+        <member name="T:Rechner.Core.Rechenautomat">
+            <summary>
+            Klasse zur Erstellung von Berechnungen.
+            </summary>
+        </member>
+        <member name="P:Rechner.Core.Rechenautomat.Ergebnis">
+            <summary>
+            Das zu erwartende Ergebnis.
+            </summary>
+        </member>
+        <member name="M:Rechner.Core.Rechenautomat.NächsteBerechnung">
+            <summary>
+            Erzeugt eine neue Angabe.
+            </summary>
+            <returns>Liefert eine Berechnung in der Form "3 + 4" zurück.</returns>
+        </member>
+        <member name="M:Rechner.Core.Rechenautomat.Prüfe(System.Int32)">
+            <summary>
+            Prüft die Eingabe des Benutzers
+            </summary>
+            <param name="eingabe">Eingabe des Benutzers als Zahl</param>
+            <returns>true, wenn die Eingabe korrekt ist bzw. false, wenn die Eingabe falsch ist.</returns>
+        </member>
+    </members>
+</doc>
