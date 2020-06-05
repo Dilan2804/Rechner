@@ -17,8 +17,11 @@ namespace ConsoleApp
             string eingabe = "-";
             while (eingabe != "")
             {
+                string ausgabe = rechner.NächsteBerechnung();
+                Console.Write("Rechne: {0} = ", ausgabe);
+
                 // Benutzereingabe - Achtung: Exception möglich
-                Console.Write("Eingabe: ");
+                // Console.Write("Eingabe: ");
                 eingabe = Console.ReadLine();
 
                 // nur wenn eine Eingabe vorhanden ist
