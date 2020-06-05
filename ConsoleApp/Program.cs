@@ -30,6 +30,15 @@ namespace ConsoleApp
                     try
                     {
                         int zahl = Convert.ToInt32(eingabe);
+
+                        if (rechner.Prüfe(zahl))
+                        {
+                            Console.WriteLine("Super!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Du kannst das besser!");
+                        }
                     }
                     catch (Exception ex)
                     {
