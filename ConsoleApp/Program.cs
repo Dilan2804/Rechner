@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Rechner.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,11 +12,29 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
             // Verwendung der Klasse
+            Rechenautomat rechner = new Rechenautomat();
 
             string eingabe = "-";
             while (eingabe != "")
             {
                 // Benutzereingabe - Achtung: Exception möglich
+                Console.Write("Eingabe: ");
+                eingabe = Console.ReadLine();
+
+                // nur wenn eine Eingabe vorhanden ist
+                if (eingabe != "")
+                {
+                    try
+                    {
+                        int zahl = Convert.ToInt32(eingabe);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Bitte geben Sie nur Zahlen ein.");
+                    }
+                }
+
+                
 
             }
         }
