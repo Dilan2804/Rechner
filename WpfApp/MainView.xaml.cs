@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MvvmCross.Platforms.Wpf.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,7 @@ namespace WpfApp
     /// <summary>
     /// Interaktionslogik für MainView.xaml
     /// </summary>
-    public partial class MainView : UserControl
+    public partial class MainView : MvxWpfView
     {
         public MainView()
         {
