@@ -7,14 +7,11 @@ using MvvmCross.ViewModels;
 
 namespace WpfApp
 {
-    class Setup : MvxApplication
+    public class Setup : MvxApplication
     {
         public override void Initialize()
-        {
-            base.Initialize();
-            {
-                RegisterAppStart<MainViewModel>();
-            }
+        {           
+                RegisterAppStart<MainViewModel>();            
         }
     }
 }

@@ -14,8 +14,11 @@ namespace WpfApp
     /// <summary>
     /// Interaktionslogik für "App.xaml"
     /// </summary>
-    public partial class App : RegisterSetup()
+    public partial class App : MvxApplication
     {
-        this.RegisterSetupType<MvxWpfSetup<Setup>>();
+        protected override void RegisterSetup()
+        {
+            this.RegisterSetupType<MvxWpfSetup<Setup>>();
+        }
     }
 }
